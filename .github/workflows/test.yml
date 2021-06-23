@@ -19,4 +19,4 @@ jobs:
           make test-with-coverage
       - name: Upload coverage to Codecov
         # What is `-t $CODECOV_TOKEN`? => Read: https://docs.codecov.com/docs/about-the-codecov-bash-uploader#flag
-        run: bash <(curl -s https://codecov.io/bash) -t $CODECOV_TOKEN
+        run: bash <(curl -s https://codecov.io/bash) -t ${{ secrets.CODECOV_TOKEN }}
