@@ -16,15 +16,15 @@ jobs:
         run: go version
       - name: Run tests and get coverage
         run: |
-          go test -race -coverprofile=coverage.out -covermode=atomic ./...
+          go test -race -coverprofile=coverage.txt -covermode=atomic ./...
       - name: ls
         run: ls -alFh
       - name: Upload coverage to Codecov
         uses: codecov/codecov-action@v1
         with:
-          token: ${{ secrets.CODECOV_TOKEN }} # not required for public repos
-          files: ./coverage.out # optional
-          flags: unittests # optional
-          name: codecov-umbrella # optional
+          # token: ${{ secrets.CODECOV_TOKEN }} # not required for public repos
+          # files: ./coverage.out # optional
+          # flags: unittests # optional
+          # name: codecov-umbrella # optional
           fail_ci_if_error: true # optional (default = false)
-          verbose: true # optional (default = false)
+          # verbose: true # optional (default = false)
