@@ -10,6 +10,7 @@ Description:
 - CI: GitHub Actions
 - Prog lang: Golang
 - Repo status (public/private): public repo
+- Upload: Codecov Bash uploader
 
 ## Badge
 
