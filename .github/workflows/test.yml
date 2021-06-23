@@ -18,5 +18,9 @@ jobs:
         run: |
           make test-with-coverage
       - name: Upload coverage to Codecov
-        # What is `-t $CODECOV_TOKEN`? => Read: https://docs.codecov.com/docs/about-the-codecov-bash-uploader#flag
-        run: bash <(curl -s https://codecov.io/bash) -t ${{ secrets.CODECOV_TOKEN }}
+        # Ref (About secret token to upload the coverage):
+        #   https://docs.codecov.com/docs/about-the-codecov-bash-uploader#flag
+        #   https://docs.github.com/en/actions/reference/workflow-syntax-for-github-actions#jobsjob_idstepsenv
+        env:
+          CODECOV_TOKEN: ${{ secrets.CODECOV_TOKEN }}
+        run: bash <(curl -s https://codecov.io/bash)
