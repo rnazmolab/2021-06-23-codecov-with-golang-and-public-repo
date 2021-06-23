@@ -12,6 +12,10 @@ Description:
 - Repo status (public/private): public repo
 - Upload: [Codecov GitHub Action](https://github.com/codecov/codecov-action)
 
+## Codecov URL
+
+https://app.codecov.io/gh/rnazmolab/2021-06-23-codecov-with-golang-and-public-repo
+
 ## Badge
 
 [![codecov](https://codecov.io/gh/rnazmolab/2021-06-23-codecov-with-golang-and-public-repo/branch/main/graph/badge.svg?token=9fSGrgS0Ri)](https://codecov.io/gh/rnazmolab/2021-06-23-codecov-with-golang-and-public-repo)
