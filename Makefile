@@ -2,6 +2,6 @@
 test:
 	go test -v
 
-.PHONY: coverage
-cover:
-	go test -race -coverprofile=coverage.out -covermode=atomic ./...
+.PHONY: test-with-coverage
+test-with-coverage:
+	go test -v -race -coverprofile=coverage.out -covermode=atomic ./...
