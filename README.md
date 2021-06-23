@@ -36,7 +36,7 @@ Ref: https://docs.codecov.com/docs/quick-start#basic-usage
     - ~~https://app.codecov.io/gh/rnazmolab/2021-06-23-codecov-with-golang-and-public-repo にアクセスする~~
     - ~~`CODECOV_TOKEN='xxxxxxxxxxxxxxxxxxxxxxxxxxx'` のような `Token` が表示されているはずなので、それをコピーする~~
     - ~~その Token をここ https://github.com/rnazmolab/2021-06-23-codecov-with-golang-and-public-repo/settings/environments/new へ登録する~~
-    - public repository (かつ `Codecov GitHub Action`を使うから？) ので、token はいらない
+    - **public repository** (かつ `Codecov GitHub Action`を使うから？) ので、**token はいらない**
 5. Add badge
     - https://app.codecov.io/gh/rnazmolab/2021-06-23-codecov-with-golang-and-public-repo/settings/badge にあるので、それを `README.md` にコピペする
 
