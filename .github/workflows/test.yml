@@ -18,4 +18,5 @@ jobs:
         run: |
           make test-with-coverage
       - name: Upload coverage to Codecov
-        run: bash <(curl -s https://codecov.io/bash)
+        # What is `-t token`? => Read: https://docs.codecov.com/docs/about-the-codecov-bash-uploader#flag
+        run: bash <(curl -s https://codecov.io/bash) -t token
