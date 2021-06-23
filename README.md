@@ -23,18 +23,18 @@ Description:
 Ref: https://docs.codecov.com/docs/quick-start#basic-usage
 
 1. Add files
-  - `main.go`, `go.mod`(, `README.md`)
+    - `main.go`, `go.mod`(, `README.md`)
 2. Setup tests
-  - `main_test.go`, `Makefile`
+    - `main_test.go`, `Makefile`
 3. Setup CI
-  - `.github/workflows/test.yml`
-4. ~~**Setup Codecov (Register codecov token to the repo)**~~
-  - ~~**https://app.codecov.io/gh/rnazmolab/2021-06-23-codecov-with-golang-and-public-repo にアクセスする**
-  - ~~`CODECOV_TOKEN='xxxxxxxxxxxxxxxxxxxxxxxxxxx'` のような `Token` が表示されているはずなので、それをコピーする~~
-  - ~~その Token をここ https://github.com/rnazmolab/2021-06-23-codecov-with-golang-and-public-repo/settings/environments/new へ登録する~~
-  - `Codecov GitHub Action` と使う、かつ public repository なので、token はいらない
+    - `.github/workflows/test.yml`
+4. **Setup Codecov (Register codecov token to the repo)**
+    - ~~https://app.codecov.io/gh/rnazmolab/2021-06-23-codecov-with-golang-and-public-repo にアクセスする~~
+    - ~~`CODECOV_TOKEN='xxxxxxxxxxxxxxxxxxxxxxxxxxx'` のような `Token` が表示されているはずなので、それをコピーする~~
+    - ~~その Token をここ https://github.com/rnazmolab/2021-06-23-codecov-with-golang-and-public-repo/settings/environments/new へ登録する~~
+    - public repository (かつ `Codecov GitHub Action`を使うから？) ので、token はいらない
 5. Add badge
-  - https://app.codecov.io/gh/rnazmolab/2021-06-23-codecov-with-golang-and-public-repo/settings/badge にあるので、それを `README.md` にコピペする
+    - https://app.codecov.io/gh/rnazmolab/2021-06-23-codecov-with-golang-and-public-repo/settings/badge にあるので、それを `README.md` にコピペする
 
 ### Codecov Bash uploader or Codecov GitHub Action
 
