@@ -17,6 +17,8 @@ jobs:
       - name: Run tests and get coverage
         run: |
           make test-with-coverage
+      - name: ls
+        run: ls -alFh
       - name: Upload coverage to Codecov
         uses: codecov/codecov-action@v1
         with:
