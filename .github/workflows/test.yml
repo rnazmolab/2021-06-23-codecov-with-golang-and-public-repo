@@ -18,9 +18,11 @@ jobs:
         run: |
           make test-with-coverage
       - name: Upload coverage to Codecov
-        # Ref (About secret token to upload the coverage):
-        #   https://docs.codecov.com/docs/about-the-codecov-bash-uploader#flag
-        #   https://docs.github.com/en/actions/reference/workflow-syntax-for-github-actions#jobsjob_idstepsenv
-        env:
-          CODECOV_TOKEN: ${{ secrets.CODECOV_TOKEN }}
-        run: bash <(curl -s https://codecov.io/bash)
+        uses: codecov/codecov-action@v1
+        with:
+          # token: ${{ secrets.CODECOV_TOKEN }} # not required for public repos
+          files: ./coverage.out # optional
+          flags: unittests # optional
+          name: codecov-umbrella # optional
+          fail_ci_if_error: true # optional (default = false)
+          verbose: true # optional (default = false)
