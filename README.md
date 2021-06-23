@@ -2,7 +2,34 @@
 
 ## Purpose of this repo
 
-Sandbox of codecov (golang + public repo).
+Sandbox of codecov.
+
+Description:
+
+- Repo hosting: GitHub
+- CI: GitHub Actions
+- Prog lang: Golang
+- Repo status (public/private): public repo
+
+## Badge
+
+[![codecov](https://codecov.io/gh/rnazmolab/2021-06-22-github-squash-commits-in-pull-request/branch/main/graph/badge.svg?token=HNM2UVF9N8)](https://codecov.io/gh/rnazmolab/2021-06-22-github-squash-commits-in-pull-request)
+
+## MEMO
+
+### Steps
+
+- 1. Add files
+  - `main.go`, `go.mod`(, `README.md`)
+- 2. Setup tests
+  - `main_test.go`, `Makefile`
+- 3. Setup CI
+  - `.github/workflows/test.yml`
+- 4. Setup Codecov
+  - ** https://app.codecov.io/gh/rnazmolab にアクセスする** ( `https://app.codecov.io/gh/{user_name_or_organization_name_of_GitHub}`)
+  - `2021-06-22-github-squash-commits-in-pull-request` が見つかるはずなので、 それをクリックする
+- 5. Add badge
+  - https://app.codecov.io/gh/rnazmolab/2021-06-22-github-squash-commits-in-pull-request/settings/badge にあるので、それを `README.md` にコピペする
 
 ## Ref
 
