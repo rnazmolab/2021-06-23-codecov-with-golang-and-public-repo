@@ -10,11 +10,11 @@ Description:
 - CI: GitHub Actions
 - Prog lang: Golang
 - Repo status (public/private): public repo
-- Upload: Codecov Bash uploader
+- Upload: [Codecov GitHub Action](https://github.com/codecov/codecov-action)
 
 ## Badge
 
-[![codecov](https://codecov.io/gh/rnazmolab/2021-06-22-github-squash-commits-in-pull-request/branch/main/graph/badge.svg?token=HNM2UVF9N8)](https://codecov.io/gh/rnazmolab/2021-06-22-github-squash-commits-in-pull-request)
+[![codecov](https://codecov.io/gh/rnazmolab/2021-06-23-codecov-with-golang-and-public-repo/branch/main/graph/badge.svg?token=9fSGrgS0Ri)](https://codecov.io/gh/rnazmolab/2021-06-23-codecov-with-golang-and-public-repo)
 
 ## MEMO
 
@@ -28,13 +28,18 @@ Ref: https://docs.codecov.com/docs/quick-start#basic-usage
   - `main_test.go`, `Makefile`
 3. Setup CI
   - `.github/workflows/test.yml`
-4. **Setup Codecov (Register codecov token to the repo)**
-  - **https://app.codecov.io/gh/rnazmolab にアクセスする** ( `https://app.codecov.io/gh/{user_name_or_organization_name_of_GitHub}`)
-  - `2021-06-22-github-squash-commits-in-pull-request` が見つかるはずなので、 それをクリックする
-  - `CODECOV_TOKEN='xxxxxxxxxxxxxxxxxxxxxxxxxxx'` のような `Token` が表示されているはずなので、それをコピーする
-  - その Token をここ https://github.com/rnazmolab/2021-06-23-codecov-with-golang-and-public-repo/settings/environments/new へ登録する
+4. ~~**Setup Codecov (Register codecov token to the repo)**~~
+  - ~~**https://app.codecov.io/gh/rnazmolab/2021-06-23-codecov-with-golang-and-public-repo にアクセスする**
+  - ~~`CODECOV_TOKEN='xxxxxxxxxxxxxxxxxxxxxxxxxxx'` のような `Token` が表示されているはずなので、それをコピーする~~
+  - ~~その Token をここ https://github.com/rnazmolab/2021-06-23-codecov-with-golang-and-public-repo/settings/environments/new へ登録する~~
+  - `Codecov GitHub Action` と使う、かつ public repository なので、token はいらない
 5. Add badge
-  - https://app.codecov.io/gh/rnazmolab/2021-06-22-github-squash-commits-in-pull-request/settings/badge にあるので、それを `README.md` にコピペする
+  - https://app.codecov.io/gh/rnazmolab/2021-06-23-codecov-with-golang-and-public-repo/settings/badge にあるので、それを `README.md` にコピペする
+
+### Codecov Bash uploader or Codecov GitHub Action
+
+最初は [Codecov Bash uploader](https://docs.codecov.com/docs/about-the-codecov-bash-uploader) を使ってアップロードしようとしたが上手くいかず、
+諦めて [Codecov GitHub Action](https://github.com/codecov/codecov-action) を使った。こちらは以前使ったことがあるので楽に設定できた。
 
 ## Resources
 
@@ -47,6 +52,8 @@ Ref: https://docs.codecov.com/docs/quick-start#basic-usage
 **[codecov/example-go: Go coverage example](https://github.com/codecov/example-go)**
 
 [codecov/go-standard: Codecov coverage standard for go](https://github.com/codecov/go-standard)
+
+[codecov/codecov-action: GitHub Action that uploads coverage to Codecov](https://github.com/codecov/codecov-action)
 
 ## Ref
 
