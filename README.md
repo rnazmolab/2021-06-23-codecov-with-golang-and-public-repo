@@ -26,7 +26,7 @@ Description:
 - 3. Setup CI
   - `.github/workflows/test.yml`
 - 4. Setup Codecov
-  - ** https://app.codecov.io/gh/rnazmolab にアクセスする** ( `https://app.codecov.io/gh/{user_name_or_organization_name_of_GitHub}`)
+  - **https://app.codecov.io/gh/rnazmolab にアクセスする** ( `https://app.codecov.io/gh/{user_name_or_organization_name_of_GitHub}`)
   - `2021-06-22-github-squash-commits-in-pull-request` が見つかるはずなので、 それをクリックする
 - 5. Add badge
   - https://app.codecov.io/gh/rnazmolab/2021-06-22-github-squash-commits-in-pull-request/settings/badge にあるので、それを `README.md` にコピペする
