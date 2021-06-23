@@ -16,7 +16,7 @@ jobs:
         run: go version
       - name: Run tests and get coverage
         run: |
-          make test-with-coverage
+          go test -race -coverprofile=coverage.out -covermode=atomic ./...
       - name: ls
         run: ls -alFh
       - name: Upload coverage to Codecov
