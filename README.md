@@ -39,6 +39,8 @@ Ref: https://docs.codecov.com/docs/quick-start#basic-usage
 
 **[Quick Start](https://docs.codecov.com/docs/quick-start)**
 
+[Codecov Bash uploader](https://docs.codecov.com/docs/about-the-codecov-bash-uploader)
+
 **[Getting Started with Code Coverage for Golang - Codecov](https://about.codecov.io/blog/getting-started-with-code-coverage-for-golang/)**
 
 **[codecov/example-go: Go coverage example](https://github.com/codecov/example-go)**
